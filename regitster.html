@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regitster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+    <h2 class="title">註冊帳號</h2>
+
+    <form action="" method="">
+        <label for="">帳號 </label>
+        <input type="text" name="account" id="account" required>
+        <br>
+        <label for="">密碼</label>
+        <input type="password" name="password" id="password" required>
+        <label for="remember">記住</label>
+        <input type="checkbox" name="remember" id="remember">
+        <br>
+        <label for="">信箱 </label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="age">年齡: </label>
+        <input type="number" name="age" id="age" value="18" min="0" max="100" step=1  required><br>
+        <label for="">男性</label>
+        <input type="radio" name="gender" id="male" >
+        <label for="">女性性</label>
+        <input type="radio" name="gender" id="female" >
+        <br>
+        <label for="">居住區域 </label>
+            <select name="location" id="location" required>
+                <option value="north">北部</option>
+                <option value="center">中部</option>
+                <option value="south">南部</option>
+                <option value="east">東部</option>
+                <option value="outside">外島</option>
+            </select>
+        <br>
+        <label for="">居住縣市</label>
+            <input type="text" list="area-list" name="area" id="area">
+            <datalist>
+                <option value="taipei">台北</option>
+                <option value="taichung">台中</option>
+                <option value="tainan">台南</option>
+                <option value="taitung">台東</option>
+                <option value="punghu">澎湖</option>
+            </datalist>
+        <br>
+        
+        <label for="">建議:</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="file" name="file" id="file"><p><button type="submit" class="form-button">提交</button></p>
+                
+    </div>
+    </body>
+</html>
